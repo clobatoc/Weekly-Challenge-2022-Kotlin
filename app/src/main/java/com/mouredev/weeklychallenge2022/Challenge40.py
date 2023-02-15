@@ -1,5 +1,4 @@
-??? desde aquí hasta ???FIN las líneas pueden haber sido insertadas/borradas
-/*
+"""
  * Reto #40
  * TRIÁNGULO DE PASCAL
  * Fecha publicación enunciado: 03/10/22
@@ -17,15 +16,13 @@
  * - Tienes toda la información sobre los retos semanales en
  *   https://retosdeprogramacion.com/semanales2022.
  *
- */
+ """
 
 def resto_filas(ladoCounter,fila):
     longFila= len(fila)
-    #print("long fila...",longFila)
     counter=0
     filaNew=[1]
     while longFila > counter + 1:
-       # print("fila counter ",fila[counter]," fila counter+ ",fila[counter+1]," suma ",fila[counter]+fila[counter+1])
        suma = fila[counter]+fila[counter+1]
        filaNew+= [suma]
        counter+=1
@@ -45,10 +42,7 @@ def pascal_triangle(lado):
              fila=[1,1]
              print(fila)
          else:
-             #print("resto")
-             #print (len(fila))
              fila=resto_filas(ladoCounter,fila)
-             #resto_filas(ladoCounter,fila)
              print(fila)
          ladoCounter-=1
 
